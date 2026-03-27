@@ -1,16 +1,29 @@
-📊 Pandas Data Analysis Projects
+# 📊 Sales Data Analysis — Python Pandas Project
 
-This repository contains my hands-on work using Python and the Pandas library for data analysis and data manipulation. It showcases different datasets, real-world problems, and insights derived through structured analysis.
 
-🚀 About the Project
+A hands-on data analysis project using a real-world sales dataset with **185,950 rows** and 6 columns. This project covers the complete basics of data analysis using Python and Pandas — from loading raw data all the way to grouping and aggregation.
 
-The goal of this project is to:
+---
 
-Practice data analysis using Pandas
-Clean and preprocess raw datasets
-Perform exploratory data analysis (EDA)
-Generate meaningful insights using Python
-🛠️ Tools & Technologies
-Python 
-Pandas 
-NumPy 
+## 📁 Dataset Overview
+
+| Column | Description |
+
+| Order ID | Unique ID for each order |
+| Product | Name of the product ordered |
+| Quantity Ordered | Number of units ordered |
+| Price Each | Price per unit in USD |
+| Order Date | Date and time the order was placed |
+| Purchase Address | Full shipping address |
+
+  Total rows:  185,950
+
+
+
+## ⚠️ Known Data Issues & Fixes
+
+1. Repeated header rows — column names appear again as data rows because monthly files were merged:
+
+2. Missing values — some rows are completely blank:
+
+3. Wrong data types — Quantity and Price load as text (object):
